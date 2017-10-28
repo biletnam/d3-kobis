@@ -1,6 +1,10 @@
 {
   "name": "d3-kobis",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.11.5"
+  },
+  "private": true,
   "description": "",
   "main": "index.js",
   "dependencies": {
