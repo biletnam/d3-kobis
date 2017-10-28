@@ -3,7 +3,8 @@ const
   http = require('http'),
   fs = require('fs'),
   dataDir = path.join(process.env.PWD, 'public', 'data'),
-  url_tmp = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=8ed1be3a773c6b4e6bccb8fe28296f98&targetDt=";
+  api_key = fs.readFileSync('api_key.text').toString().trim();
+  url_tmp = `http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${api_key}&targetDt=`;
 
 let promises = [];
 let currentDate = null;
