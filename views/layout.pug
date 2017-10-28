@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src="scripts/d3/d3.min.js")
+    script(src="scripts/d3-timer.min.js")
+    link(rel='stylesheet', href='css/base.css')
+    title D3 Example
+
+    //- link(rel='stylesheet', href='css/normalize.css')
+    //- script(src='js/vendor/modernizr-2.6.2.min.js')
+  body
+    h1 Hello, this is #{siteName}!
+    block content
+      p This page doesn't have any content yet.
+    script(src="scripts/app.js")
+
+    //-- window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
