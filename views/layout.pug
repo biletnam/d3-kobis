@@ -5,13 +5,14 @@ html(lang="en")
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     script(src="scripts/d3/d3.min.js")
-    script(src="scripts/d3-timer.min.js")
+    script(src="scripts/d3/d3-timer.min.js")
     link(rel='stylesheet', href='css/base.css')
     title D3 Example
 
     //- link(rel='stylesheet', href='css/normalize.css')
     //- script(src='js/vendor/modernizr-2.6.2.min.js')
   body
+    include side-nav.pug
     h1 Hello, this is #{siteName}!
     block content
       p This page doesn't have any content yet.

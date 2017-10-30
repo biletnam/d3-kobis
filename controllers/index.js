@@ -43,6 +43,9 @@ router.get('/:date', (req, res) => {
   });
 });
 
+router.get('/about', (req, res) => {
+  res.render('about');
+});
 
 /*
 TODO: about page
