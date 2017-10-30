@@ -152,6 +152,9 @@
     });
   }
 
+  var event = new Event('click');
+  search.dispatchEvent(event);
+
   function location_bar_left(rank) {
     return 'translate(30, ' + ((rank - 1) * height_bar) + ')';
   }
@@ -164,3 +167,16 @@
     return d3.format(',')(count);
   }
 })();
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
+
