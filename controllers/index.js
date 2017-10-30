@@ -10,6 +10,10 @@ router.get('/', function(req, res) {
   res.render('index');
 });
 
+router.get('/about', (req, res) => {
+  res.render('about');
+});
+
 router.get('/:date', (req, res) => {
   /*
   TODO: Validate arguments e.g. too long period.
@@ -41,10 +45,6 @@ router.get('/:date', (req, res) => {
   Promise.all(promises).then(() => {
     res.send(d3data);
   });
-});
-
-router.get('/about', (req, res) => {
-  res.render('about');
 });
 
 /*

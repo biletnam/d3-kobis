@@ -5,6 +5,29 @@ svg {
  */
 }
 
+.section1 {
+  margin-bottom: 10px;
+}
+
+.section1-navbtn {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.section1-title {
+  display: inline;
+}
+
+.section2 {
+  margin-bottom: 10px;
+}
+
+/* div#graph {
+  background-image: url('../img/sooah.jpg');
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+ */
 .movieName, .audiCount {
   font-size: 0.8em;
 }
@@ -44,10 +67,6 @@ svg {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-.navbtn {
-  cursor: pointer;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
