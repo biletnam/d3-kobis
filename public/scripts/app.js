@@ -38,7 +38,7 @@
     tenColor = d3.scaleOrdinal(d3.schemeCategory10),
     fixedDomain = ['','','','','','','','','',''];
 
-  var allG = d3.select('body').append('svg')
+  var allG = d3.select('#graph').append('svg')
       .attr('width', width_total + margin.left + margin.right)
       .attr('height', height_total + margin.top + margin.bottom)
       .append('g')
