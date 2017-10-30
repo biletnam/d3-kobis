@@ -1,36 +1,7 @@
-svg {
-/*   height: 500px;
-  width: 500px;
-  border: 1px solid gray;
+
+/*
+----------------------------------------index page
  */
-}
-
-.section1 {
-  margin-bottom: 10px;
-}
-
-.section1-navbtn {
-  font-size: 1.5em;
-  cursor: pointer;
-}
-
-.section1-title {
-  display: inline;
-}
-
-.section2 {
-  margin-bottom: 10px;
-}
-
-/* div#graph {
-  background-image: url('../img/sooah.jpg');
-  background-repeat: repeat-x;
-  background-size: contain;
-}
- */
-.movieName, .audiCount {
-  font-size: 0.8em;
-}
 
 /* The side navigation menu */
 .sidenav {
@@ -75,4 +46,52 @@ svg {
     .sidenav a {font-size: 18px;}
 }
 
+svg {
+/*   height: 500px;
+  width: 500px;
+  border: 1px solid gray;
+ */
+}
+
+.section1 {
+  margin-bottom: 10px;
+}
+
+.section1-navbtn {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.section1-title {
+  display: inline;
+}
+
+
+/*
+--------------------------------------graph page
+ */
+
+/* div#graph {
+  background-image: url('../img/sooah.jpg');
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+ */
+
+.section2 {
+  margin-bottom: 10px;
+}
+
+.movieName, .audiCount {
+  font-size: 0.8em;
+}
+
+/*
+-------------------------------------About page
+ */
+.credit {
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 

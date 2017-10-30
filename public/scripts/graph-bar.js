@@ -42,18 +42,23 @@
       .attr('width', width_total + margin.left + margin.right)
       .attr('height', height_total + margin.top + margin.bottom)
       .append('g')
-      .attr('transform', 'translate(5, 30)');
+      .attr('transform', 'translate(10, 20)');
 
-  var i = 1;
-  for (i; i <= 10; i++) {
+  // allG.append('image')
+  //   .attr('xlink:href', '../img/1.png')
+  //   .attr('width', '25')
+  //   .attr('height', '25');
+
+  var i = 0;
+  for (i; i < 10; i++) {
     allG
       // .append('g')
       // .attr('transform', 'translate(2, ' + (i * height_bar) + ')')
-      .append('img')
+      .append('image')
       // .attr('src', 'img/1.png')
-      .attr('src', 'img/' + i + '.png')
-      .attr('x', '10')
-      .attr('y', i * height_bar)
+      .attr('xlink:href', '../img/' + (i + 1) + '.png')
+      // .attr('x', '10')
+      .attr('y', i * height_bar + 5)
       .attr('width', '20')
       .attr('height', '20');
   }
