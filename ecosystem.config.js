@@ -38,7 +38,9 @@ module.exports = {
       // path : '/var/www/production',
       path : '/home/ubuntu/sites/d3-kobis',
       // ssh_options : '/home/jake/Downloads/jake.pem',
+      'pre-deploy' : 'export NVM_DIR="$HOME/.nvm"',
       'post-deploy' : '/home/ubuntu/.nvm/versions/node/v6.11.5/bin/npm install && pm2 startOrRestart ecosystem.config.js --env production'
+      // 'post-deploy' : '/home/ubuntu/.nvm/versions/node/v6.11.5/bin/npm install && pm2 startOrRestart ecosystem.config.js --env production'
     },
     dev : {
       user : 'node',
