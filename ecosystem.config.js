@@ -38,7 +38,7 @@ module.exports = {
       // path : '/var/www/production',
       path : '/home/ubuntu/sites/d3-kobis',
       // ssh_options : '/home/jake/Downloads/jake.pem',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install && pm2 startOrRestart ecosystem.config.js --env production'
     },
     dev : {
       user : 'node',
