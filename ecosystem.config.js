@@ -7,8 +7,8 @@ module.exports = {
 
     // First application
     {
-      name      : 'API',
-      script    : 'app.js',
+      name      : 'kobis',
+      script    : 'server.js',
       env: {
         COMMON_VARIABLE: 'true'
       },
@@ -19,8 +19,8 @@ module.exports = {
 
     // Second application
     {
-      name      : 'WEB',
-      script    : 'web.js'
+      name      : 'fetch',
+      script    : 'kobis-fetch.js'
     }
   ],
 
@@ -30,19 +30,22 @@ module.exports = {
    */
   deploy : {
     production : {
-      user : 'node',
-      host : '212.83.163.1',
+      user : 'ubuntu',
+      host : 'ec2',
+      // port : '3000',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
-      path : '/var/www/production',
+      repo : 'git@github.com:danbi2990/d3-kobis.git',
+      // path : '/var/www/production',
+      path : '/home/ubuntu/sites/d3-kobis',
+      // ssh_options : '/home/jake/Downloads/jake.pem',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
       user : 'node',
-      host : '212.83.163.1',
+      host : 'localhost',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
-      path : '/var/www/development',
+      repo : 'git@github.com:danbi2990/d3-kobis.git',
+      path : '/home/jake/Dev/d3-kobis',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
       env  : {
         NODE_ENV: 'dev'

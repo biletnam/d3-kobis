@@ -2,8 +2,8 @@ extends layout
 
 block content
   div.section2
-    input(type='date' id='fromDate')
-    input(type='date' id='toDate')
+    input#fromDate.dateInput(type='date', min="2017-10-01")
+    input#toDate.dateInput(type='date')
     button#search Search
   div#graph.section3
   script(src="scripts/graph-bar.js")

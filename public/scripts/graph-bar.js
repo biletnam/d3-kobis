@@ -39,8 +39,10 @@
     fixedDomain = ['','','','','','','','','',''];
 
   var allG = d3.select('#graph').append('svg')
-      .attr('width', width_total + margin.left + margin.right)
-      .attr('height', height_total + margin.top + margin.bottom)
+      // .attr('width', width_total + margin.left + margin.right)
+      // .attr('height', height_total + margin.top + margin.bottom)
+      .attr('viewBox', "0 0 960 500")
+      .attr('preserveAspectRatio', "xMidYMid meet")
       .append('g')
       .attr('transform', 'translate(10, 20)');
 

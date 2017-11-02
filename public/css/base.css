@@ -82,6 +82,10 @@ svg {
   margin-bottom: 10px;
 }
 
+.dateInput {
+  width: 130px;
+}
+
 .movieName, .audiCount {
   font-size: 0.8em;
 }
