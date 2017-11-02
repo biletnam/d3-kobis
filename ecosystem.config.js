@@ -20,7 +20,8 @@ module.exports = {
     // Second application
     {
       name      : 'fetch',
-      script    : 'kobis-fetch.js'
+      script    : 'kobis-fetch.js',
+      cron_restart : '0 7 * * *'
     }
   ],
 
