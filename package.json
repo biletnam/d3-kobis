@@ -10,6 +10,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "helmet": "^3.9.0",
+    "node-cron": "^1.2.1",
     "pug": "^2.0.0-rc.4",
     "serve-favicon": "^2.4.5"
   },
@@ -18,7 +19,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server.js"
+    "start": "node ./server.js",
+    "build-task:scss-compile": "node-sass-chokidar --source-map true scss/ -o public/css/",
+    "build-task:autoprefixer": "postcss public/css/*.css --use autoprefixer -d public/css",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'scss/**/*.scss' -c 'npm run sass:build'",
+    "dev": "npm-run-all -p sass:*"
   },
   "author": "Jake Park",
   "license": "ISC"
