@@ -21,7 +21,9 @@ module.exports = {
     {
       name      : 'fetch',
       script    : 'kobis-fetch.js',
-      cron_restart : '* */8 * * *'
+      exec_mode : 'cluster',
+      'instances' : 1,
+      cron_restart : '* */4 * * *'
     }
   ],
 
