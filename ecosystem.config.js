@@ -21,7 +21,7 @@ module.exports = {
     {
       name      : 'fetch',
       script    : 'kobis-fetch.js',
-      cron_restart : '0 7 * * *'
+      cron_restart : '* */8 * * *'
     }
   ],
 
