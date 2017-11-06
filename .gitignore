@@ -1,8 +1,10 @@
-.tern-project
 node_modules/
-api_key.text
-data/
-sooah.jpg
-.deploys
-current
 source/
+data/
+
+.tern-project
+.deploys
+api_key.text
+sooah.jpg
+current
+test.js
