@@ -2,7 +2,7 @@ const
   path = require('path'),
   http = require('http'),
   fs = require('fs'),
-  projectDir = '/home/jake/Dev/d3-kobis'
+  projectDir = '/home/ubuntu/sites/d3-kobis'
   dataDir = path.join(projectDir, 'public', 'data'),
   api_key = fs.readFileSync(path.join(projectDir, 'api_key.text')).toString().trim();
   url_tmp = `http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${api_key}&targetDt=`;
