@@ -24,4 +24,4 @@
 # */1 * * * * /home/jake/.nvm/versions/node/v6.11.5/bin/node /home/jake/Dev/d3-kobis/kobis-fetch.js
 
 # */1 * * * * /home/jake/.nvm/versions/node/v6.11.5/bin/node /home/jake/Dev/d3-kobis/test.js
-50 14 * * * /home/ubuntu/.nvm/versions/node/v6.11.5/bin/node /home/ubuntu/sites/d3-kobis/cron-kobis-fetch.js
+53 14 * * * /home/ubuntu/.nvm/versions/node/v6.11.5/bin/node /home/ubuntu/sites/d3-kobis/cron-kobis-fetch.js
